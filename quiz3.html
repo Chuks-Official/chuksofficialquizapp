@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Website</title>
+  <link rel="stylesheet" href="quiz3.css" />
+  <link rel="icon" href="LOGO (2025_02_08 19_48_23 UTC).webp">
+</head>
+<body>
+  <div class="quiz-container">
+    <header>
+      <h1 style="font-size: 20px;">🚀Tech Quiz</h1>
+      <div class="info-bar">
+        <div id="timer" style="font-size: 20px;">⏳45:00</div>
+    
+        <div id="progress" style="font-size: 20px;">1 of 40</div>
+      </div>
+    </header>
+
+    <main>
+      <div id="question-box" style="font-size: 20px;">
+        <h2 id="question">Loading question...</h2>
+        <form id="options-form"></form>
+        <button id="next-btn" style="font-size: 20px;">Next</button>
+      </div>
+      <div id="result" class="hidden"></div>
+    </main>
+  </div>
+
+  <script src="quiz3.js"></script>
+</body>
+</html>
