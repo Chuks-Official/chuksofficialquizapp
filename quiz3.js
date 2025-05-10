@@ -404,7 +404,7 @@ const questions = [
   
   let currentQuestion = 0;
   let score = 0;
-  let timeLeft = 2700; //Tests are to be completed within 9 minutes else you would be loggeed out. 
+  let timeLeft = 3600; //Tests are to be completed within 1 hour else you would be loggeed out. 
   let timerInterval;
   
   const questionEl = document.getElementById("question");
@@ -422,8 +422,8 @@ const questions = [
       const seconds = String(timeLeft % 60).padStart(2, '0');
       timerEl.textContent = `⏳ ${minutes}:${seconds}`;
   
-      if (timeLeft === 30) {
-        alert("⚠️ 30 seconds left!");
+      if (timeLeft === 120) {
+        alert("⚠️ 120 seconds left!");
       }
   
       if (timeLeft <= 0) {
